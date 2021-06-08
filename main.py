@@ -3,6 +3,7 @@ from kivy.uix.label import Label
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
+import socket as s
 
 
 class MyPage(BoxLayout):
@@ -20,6 +21,9 @@ class MyPage(BoxLayout):
     def find_domain(self,instance):
         self.label.text = "IP"
         self.textinput.text = "This is IP"
+        a = "facebook.com"
+        ip = s.gethostbyname(a)
+        print(ip)
 
 
 class Main(App):
