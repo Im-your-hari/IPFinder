@@ -20,10 +20,10 @@ class MyPage(BoxLayout):
     
     def find_domain(self,instance):
         self.label.text = "IP"
-        self.textinput.text = "This is IP"
-        a = "facebook.com"
-        ip = s.gethostbyname(a)
-        print(ip)
+        #self.textinput.text = "This is IP"
+        a = self.textinput.text
+        self.textinput.text = s.gethostbyname(a)
+        
 
 
 class Main(App):
