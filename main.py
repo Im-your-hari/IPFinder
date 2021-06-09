@@ -35,10 +35,12 @@ class MyPage(BoxLayout):
         
 
 
-class Main(App):
+class IPxFOUND(App):
     def build(self):
         Window.clearcolor = (0,0,255,1)
+        self.icon = 'icon.png'
+        self.presplash = 'icon.png'
         return MyPage()
         
 if __name__ == '__main__':
-    Main().run()
+    IPxFOUND().run()
