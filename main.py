@@ -4,6 +4,8 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
 from kivy.core.window import Window
+from kivy.animation import Animation
+from kivy.clock import Clock
 import socket as s
 
 
@@ -39,7 +41,8 @@ class IPxFOUND(App):
     def build(self):
         Window.clearcolor = (0,0,255,1)
         self.icon = 'icon.png'
-        self.presplash = 'icon.png'
+        #self.presplash = 'icon.png'
+        
         return MyPage()
         
 if __name__ == '__main__':
