@@ -9,7 +9,7 @@ import socket as s
 class MyPage(BoxLayout):
     def __init__(self):
         super().__init__()
-        BoxLayout().orientation = 'horizontal'
+        self.orientation = 'vertical'
         self.label = Label(text="_Enter Domain_")
         self.textinput = TextInput(multiline=False)
         self.button = Button(text="Find",on_press=self.find_domain)
